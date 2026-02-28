@@ -5,6 +5,11 @@
 
 ### Added
 
+* Added `wasm_bindgen_test::screenshot(path)` for taking WebDriver screenshots from
+  browser tests. Tests write a file path to a hidden DOM element; the headless test
+  runner detects it, captures a PNG via the WebDriver screenshot endpoint, saves it,
+  and signals back so the async test can continue.
+
 ### Changed
 
 ### Fixed
